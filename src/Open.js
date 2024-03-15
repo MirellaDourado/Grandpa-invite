@@ -22,7 +22,7 @@ function Open() {
             <p>
               Teco
               {/* <img src={ tamborim } alt="tamborim, clique para dar play" className='test'/> */}
-              <button onClick={ teste }> { noise === false ? <IoVolumeMute size={'1.7rem'}/> : <IoVolumeHigh size={'1.7rem'}/> } </button>
+              <button onClick={ teste }> { noise === false ? <IoVolumeMute size={'1.7 rem'}/> : <IoVolumeHigh size={'1.7rem'}/> } </button>
             </p>
         </div>
         <div className="middle-side">
@@ -57,7 +57,7 @@ function Open() {
         </div>
       </main>
       <footer>
-        <p> A uma vida bem vivida, uma grande celebração! </p>
+        <p> Uma vida bem vivida, uma grande celebração! </p>
       </footer>
     </div>
   )
