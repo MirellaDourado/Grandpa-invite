@@ -5,7 +5,7 @@ import logo from './assets/logo.png'
 import tamborim from './assets/tamborim.png'
 import teco from './assets/teco_teco.mp3'
 import { useState, useRef } from "react";
-import { IoVolumeMute, IoVolumeHigh } from "react-icons/io5";
+import { TbMusicOff, TbMusic } from "react-icons/tb";
 
 function Open() {
   const [noise, setNoise] = useState(false);
@@ -29,7 +29,7 @@ function Open() {
                  src={teco}
               />
               <button onClick={ teste }>
-                { noise === false ? <IoVolumeMute size={'1.7rem'}/> : <IoVolumeHigh size={'1.7rem'}/> }
+                { noise === false ? <TbMusicOff size={'1.7rem'}/> : <TbMusic size={'1.7rem'}/> }
               </button>
             </p>
         </div>
@@ -66,7 +66,7 @@ function Open() {
         </div>
       </main>
       <footer>
-        <p> Uma vida bem vivida, uma grande celebração! </p>
+        <p> Para uma vida bem vivida, uma grande celebração! </p>
       </footer>
     </div>
   )
