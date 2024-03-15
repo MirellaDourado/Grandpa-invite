@@ -3,14 +3,17 @@ import { FiMapPin } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import logo from './assets/logo.png'
 import tamborim from './assets/tamborim.png'
-import { useState } from "react";
+import teco from './assets/teco_teco.mp3'
+import { useState, useRef } from "react";
 import { IoVolumeMute, IoVolumeHigh } from "react-icons/io5";
 
 function Open() {
   const [noise, setNoise] = useState(false);
+  const myRef = useRef();
 
-  function teste() {
+  async function teste() {
     setNoise(!noise)
+    !noise === false ? myRef.current.pause() : myRef.current.play()
   }
 
   return(
@@ -21,8 +24,13 @@ function Open() {
             <p> Etelvino Soares Alves </p>
             <p>
               Teco
-              {/* <img src={ tamborim } alt="tamborim, clique para dar play" className='test'/> */}
-              <button onClick={ teste }> { noise === false ? <IoVolumeMute size={'1.7 rem'}/> : <IoVolumeHigh size={'1.7rem'}/> } </button>
+              <audio
+                 ref={myRef}
+                 src={teco}
+              />
+              <button onClick={ teste }>
+                { noise === false ? <IoVolumeMute size={'1.7rem'}/> : <IoVolumeHigh size={'1.7rem'}/> }
+              </button>
             </p>
         </div>
         <div className="middle-side">
@@ -35,13 +43,14 @@ function Open() {
             Com as garotas do meu bairro que era natural <br />
             Vivia em postes, soltava papagaio <br />
             Até meus quatorze anos era esse meu mal " <br />
+            <img src={ tamborim } alt="tamborim, clique para dar play" className='test'/>
           </p>
         </div>
         <div className="bottom-side">
           <div className="info">
             <p> Sábado, 30 DE MARÇO | 14H </p>
             <p>
-                Rua J, 29 - São Domingos, Ilhéus - BA, 45657739 - Praia do Norte, Terceira rua após o posto de gasolina <br />
+                Rua J, 29 - São Domingos, Ilhéus - BA, 45657739 - Praia do Norte, <br/> Terceira rua após o posto de gasolina <br />
             </p>
           </div>
           <div className="links">
