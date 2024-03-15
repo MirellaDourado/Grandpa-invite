@@ -3,20 +3,29 @@ import { FiMapPin } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import logo from './assets/logo.png'
 import tamborim from './assets/tamborim.png'
+import { useState } from "react";
+import { IoVolumeMute, IoVolumeHigh } from "react-icons/io5";
 
 function Open() {
+  const [noise, setNoise] = useState(false);
+
+  function teste() {
+    setNoise(!noise)
+  }
+
   return(
       <div className='invite-paper'>
       <main id='invite'>
-        <div class="top-side">
+        <div className="top-side">
           <img src={ logo } alt="" />
             <p> Etelvino Soares Alves </p>
             <p>
               Teco
-              <img src={ tamborim } alt="tamborim, clique para dar play" class='test'/>
+              {/* <img src={ tamborim } alt="tamborim, clique para dar play" className='test'/> */}
+              <button onClick={ teste }> { noise === false ? <IoVolumeMute size={'1.7rem'}/> : <IoVolumeHigh size={'1.7rem'}/> } </button>
             </p>
         </div>
-        <div class="middle-side">
+        <div className="middle-side">
           <p>
             " Teco, teco, teco, teco, teco <br />
             Na bola de gude era o meu viver <br />
@@ -28,14 +37,14 @@ function Open() {
             Até meus quatorze anos era esse meu mal " <br />
           </p>
         </div>
-        <div class="bottom-side">
-          <div class="info">
+        <div className="bottom-side">
+          <div className="info">
             <p> Sábado, 30 DE MARÇO | 14H </p>
             <p>
                 Rua J, 29 - São Domingos, Ilhéus - BA, 45657739 - Praia do Norte, Terceira rua após o posto de gasolina <br />
             </p>
           </div>
-          <div class="links">
+          <div className="links">
               <Link to={{pathname: 'https://maps.app.goo.gl/6jwrXuLPJM2HACZy7'}} target="_blank" title="Localização da festa"> 
                 <FiMapPin size='3rem'/>
                   <span> Localização </span>

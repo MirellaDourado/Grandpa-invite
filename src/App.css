@@ -50,6 +50,12 @@
     gap: 1rem;
 }
 
+.top-side button {
+    border: none;
+    background-color: transparent;
+    color: #6b6235;
+}
+
 .middle-side {
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.7rem;
