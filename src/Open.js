@@ -33,7 +33,6 @@ function Open() {
             <p> Sábado, 30 DE MARÇO | 14H </p>
             <p>
                 Rua J, 29 - São Domingos, Ilhéus - BA, 45657739 - Praia do Norte, Terceira rua após o posto de gasolina <br />
-                Terceira rua após o posto de gasolina
             </p>
           </div>
           <div class="links">
