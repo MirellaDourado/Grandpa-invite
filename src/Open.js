@@ -48,7 +48,7 @@ function Open() {
         </div>
         <div className="bottom-side">
           <div className="info">
-            <p> Sábado, 30 DE MARÇO | 14H </p>
+            <p> SÁBADO, 30 DE MARÇO | 14H </p>
             <p>
                 Rua J, 29 - São Domingos, Ilhéus - BA, 45657739 - Praia do Norte, <br/> Terceira rua após o posto de gasolina <br />
             </p>
