@@ -58,7 +58,7 @@ function Open() {
                 <FiMapPin size='3rem'/>
                   <span> Localização </span>
               </Link>
-              <Link to={{pathname: 'https://wa.me/557388849931'}} target="_blank" title="Confirmação de presença">
+              <Link to={{pathname: 'https://wa.me/557388849931/?text=Confirmo%20minha%20presença%20no%20evento'}} target="_blank" title="Confirmação de presença">
                 <BsWhatsapp size='3rem' />
                 <span>Presença</span>
               </Link>
